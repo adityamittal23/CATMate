@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Barlow Condensed', 'Barlow', 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom industrial styling */
+.cat-glow {
+  box-shadow: 0 0 25px rgba(255, 205, 17, 0.25);
+}
+
+.cat-border-glow {
+  border-color: #FFCD11;
+  box-shadow: 0 0 15px rgba(255, 205, 17, 0.3);
+}
+
+.cab-tap-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Custom scrollbars for rugged tablet */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFCD11;
+}
